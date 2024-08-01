@@ -8,7 +8,7 @@ const FetchData = () => {
 
     const FetchData = async () => {
         await  axios.get(
-            "https://newsapi.org/v2/top-headlines?country=za&apiKey=5ef3faf455b3405f8ab8918c23911f01"
+            "https://newsapi.org/v2/top-headlines?country=za&apiKey="
         )
         .then((res) => setData(res.data.articles))
         .catch(error => console.error('Error fetching data:', error));
