@@ -2,7 +2,7 @@ import React from 'react'
 
 function Category({ cat }) {
     return (
-        <div>{cat}</div>
+        <div style={{ minHeight: '100vh'}}>{cat}</div>
     )
 }
 

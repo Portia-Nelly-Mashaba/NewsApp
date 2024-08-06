@@ -1,12 +1,13 @@
-import React from 'react'
+import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './Navbar.css';
+import { FaMagnifyingGlass } from "react-icons/fa6";
 
 
 function Navbar() {
   return (
-    <header className="header">
-        <h1>News Hub</h1>
+    <div className="navbar">
+        <h1 className='logo'>NEWS Hub</h1>
             <nav>
                 <ul>
                     <li>
@@ -35,7 +36,11 @@ function Navbar() {
                     </li>
                 </ul>
             </nav>
-    </header>
+            <div className='search-box'>
+              <input type='text' placeholder='Search'  />
+              <FaMagnifyingGlass style={{ cursor: "pointer",}}  />
+            </div>
+    </div>
   );
 }
 

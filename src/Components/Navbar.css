@@ -1,17 +1,59 @@
-.header {
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: #0c2d48;
     color: white;
-    padding: 20px;
-    text-align: center;
+    /* padding: 10px ;  */
 }
 
-.header nav ul {
-    list-style-type: none;
-    padding: 0;
+.logo{
+    cursor: pointer;
 }
 
-.header nav ul li {
-    display: inline;
+ul{
+    flex: 1;
+    list-style: none;
+    text-decoration: center;
     color: white;
-    margin: 0 10px;
 }
+
+li{
+    display: inline-block;
+    margin: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+a {
+    color: white; /* Ensure link color is white */
+    text-decoration: none; /* Remove underline from links */
+}
+
+a.active {
+    font-weight: bold; /* Optional: Highlight active link */
+}
+.search-box{
+    display: flex;
+    align-items: center;
+    background: #189ab4;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+.search-box input{
+    padding: 6px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    color: #0c2d48;
+    font-size: 18px;
+    max-width: 120px;
+}
+
+.search-box input::placeholder{
+    color: white;
+}
+
+/* background-color: #0c2d48;
+    color: white; */

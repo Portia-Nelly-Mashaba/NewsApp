@@ -1,26 +1,32 @@
 
-import './App.css';
 import { BrowserRouter, Routes, Route} from "react-router-dom";
 import Home from './Components/Home';
-import  Categories from './Components/Categories';
+// import  Categories from './Components/Categories';
+import FetchData from "./Components/FetchData";
 import Navbar from './Components/Navbar';
+import Footer from './Components/Footer';
 
 
 function App() {
+
+
   return (
    
     <BrowserRouter>
-    <Navbar />
+    <Navbar  />
     <Routes>
       <Route  path='/' element={<Home />}/> 
-      <Route  path='/general' element={<Categories cat="general" />}/> 
-      <Route  path='/business' element={<Categories cat="business" />}/> 
-      <Route  path='/entertainment' element={<Categories cat="entertainment" />}/> 
-      <Route  path='/health' element={<Categories cat="health" />}/> 
-      <Route  path='/science' element={<Categories cat="science" />}/> 
-      <Route  path='/technology' element={<Categories cat="technology" />}/> 
-      <Route  path='/sports' element={<Categories cat="sports" />}/> 
+      <Route  path='/general' element={<FetchData cat="general" />}/> 
+      <Route  path='/business' element={<FetchData cat="business"  />}/> 
+      <Route  path='/entertainment' element={<FetchData cat="entertainment" />}/> 
+      <Route  path='/health' element={<FetchData cat="health" />}/> 
+      <Route  path='/science' element={<FetchData cat="science" />}/> 
+      <Route  path='/technology' element={<FetchData cat="technology" />}/> 
+      <Route  path='/sports' element={<FetchData cat="sports" />}/> 
     </Routes>
+    <Footer />
+    </BrowserRouter>
+  );
     {/* <Routes>
       <Route  path='/' element={<Home />}/> 
       <Route  path='/politics' element={<General />}/>
@@ -31,8 +37,7 @@ function App() {
       <Route  path='/technology' element={<Technology />}/>
       <Route  path='/sports' element={<Sports />}/> 
     </Routes> */}
-    </BrowserRouter>
-      );
+    
 }
 
 export default App;
