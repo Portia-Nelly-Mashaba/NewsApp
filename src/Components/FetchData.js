@@ -9,8 +9,8 @@ const FetchData = ({ cat }) => {
 try {
     const response = await axios.get(
         cat 
-        ? `https://newsapi.org/v2/top-headlines?country=za&category=${cat}&apiKey=5ef3faf455b3405f8ab8918c23911f01` 
-        : `https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=5ef3faf455b3405f8ab8918c23911f01`
+        ? `https://newsapi.org/v2/top-headlines?country=za&category=${cat}&apiKey=` 
+        : `https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=`
     );
     setData(response.data.articles);
 } catch (error) {

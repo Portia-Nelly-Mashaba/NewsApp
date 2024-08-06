@@ -1,6 +1,7 @@
 
 import { BrowserRouter, Routes, Route} from "react-router-dom";
 import Home from './Components/Home';
+import React, { useState } from 'react';
 // import  Categories from './Components/Categories';
 import FetchData from "./Components/FetchData";
 import Navbar from './Components/Navbar';
